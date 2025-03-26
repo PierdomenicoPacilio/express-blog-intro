@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.send('Server del mio blog');
 });
 
+app.get('/bacheca', (req, res) => {
+    res.json(recipes);
+});
+
 app.listen(port, () => {
     console.log('Server in ascolto sulla porta ' + port);
 });
